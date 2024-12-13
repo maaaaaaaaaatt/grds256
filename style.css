@@ -8,8 +8,7 @@
 
 html,
 body,
-p,
-.h1 {
+p {
   font-family: 'IBM Plex Mono', monospace;
   text-align: justify;
   line-height: 1.3;
@@ -24,6 +23,10 @@ p,
   /* for Firefox */
   overflow-y: hidden;
   overflow-x: hidden
+}
+
+.h1 {
+  font-size: 18px;
 }
 
 body::-webkit-scrollbar {
@@ -423,7 +426,7 @@ blockquote {
   body,
   p,
   .h1 {
-    font-size: 11px;
+    font-size: 14px;
     font-family: 'Roboto Mono', monospace;
     text-align: left;
     line-height: 1.3;
@@ -459,6 +462,10 @@ blockquote {
   .nav {
     position: fixed;
     top: 0;
+  }
+
+  .draggable {
+    display: none;
   }
 
   .grid-item img {
