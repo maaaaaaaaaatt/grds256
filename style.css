@@ -25,7 +25,8 @@ p {
   scrollbar-width: none;
   /* for Firefox */
   overflow-y: hidden;
-  overflow-x: hidden
+  overflow-x: hidden;
+  scroll-margin-top: -10px;
 }
 
 .h1 {
@@ -88,6 +89,16 @@ div::-webkit-scrollbar {
 
 .main {
   padding-left: 30px;
+}
+
+#stickynav {
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  overflow: hidden;
+  background-color: white;
+  z-index: 1000;
+  border-bottom: 1px solid black;
 }
 
 .nav {
@@ -170,6 +181,7 @@ img:hover {
 .section {
   padding: 10px 48px 10px 10px;
   border-top: 1px solid black;
+  scroll-margin-top: 55px;
 }
 
 .schedule {
@@ -232,7 +244,7 @@ img {
   width: 250px;
   height: 250px;
   cursor: grab;
-  z-index: 1000;
+  z-index: 10000;
 }
 
 .draggable img {
